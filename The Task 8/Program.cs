@@ -70,12 +70,15 @@ namespace The_Task_8
             int x;
             for (int i = 0; i < gr.GetLength(1); i++)
             {
+
                 for (int n = 0; n < 2; n++)
                 {
                     x = rand.Next(0, gr.GetLength(0));
                     if (gr[x, i] != 1) gr[x, i] = 1;
                     else n--;
                 }
+
+
             }
 
             return gr;
@@ -107,6 +110,6 @@ namespace The_Task_8
             }
 
             return col;
-        }
+        }  //раскрашивает граф, вроде даже правильно
     }
 }
